@@ -24,4 +24,8 @@ readonly class CharacterService
     {
         $this->characterRepository->createCharacter($character);
     }
+    public function editCharacter(Character $character) :void
+    {
+        $this->characterRepository->editCharacter($character);
+    }
 }
